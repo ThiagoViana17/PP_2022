@@ -49,6 +49,18 @@ export class UsersService {
     return user;
   }
 
+  async updateBalance(id: number, value: number){
+    let userToUpdate = await this.userRepository.findOne({
+      where: {id}
+    });
+
+    userToUpdate.balance += value;
+    
+    const user = await this.userRepository.save(userToUpdate);
+
+    return user
+  }
+
   async remove(id: number) {
     const user = await this.userRepository.findOne({
       where: { id }

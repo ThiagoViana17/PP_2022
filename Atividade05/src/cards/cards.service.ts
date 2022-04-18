@@ -70,7 +70,7 @@ export class CardsService {
     const date = new Date()
     const year = date.getFullYear();
     const month = date.getMonth();
-    const day = date.getDay();
+    const day = date.getDate();
     const expirationDate = new Date(year+1, month+1, day).toLocaleDateString();
     
     card.cardNumber = cardNumber;
