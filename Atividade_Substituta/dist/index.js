@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const PhysicalExercise_1 = require("./PhysicalExercise");
+const Database_1 = require("./database/Database");
+const User_1 = require("./User");
+const user1 = new User_1.User('Ana', new PhysicalExercise_1.Swimming);
+const user2 = new User_1.User('Bernardo', new PhysicalExercise_1.Boxing);
+const user3 = new User_1.User('João', new PhysicalExercise_1.Judo);
+const user4 = new User_1.User('Carolina', new PhysicalExercise_1.Bodybuilding);
+const user5 = new User_1.User('Daniel', new PhysicalExercise_1.Swimming);
+const user6 = new User_1.User('Eduardo', new PhysicalExercise_1.Judo);
+console.log(Database_1.database.showUsers());
