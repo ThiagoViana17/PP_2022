@@ -19,4 +19,4 @@
 
 ##### Strategy: Eu utilizei ele para implementar a forma que cada exercício deve se comportar, como por exemplo o nome e os dias que será praticado, evitando assim poluição no código no momento da implementação na qual cada aluno será cadastrado no sistema. Evitando o if e else constantemente.
 
-##### Singleton: Eu utilizei o singleton pra levantar um banco de dados na memória pra poder chamar-lo qualquer canto e apesar de ter várias instâncias de usuário a mesma instância de banco de dados será utilizada, centralizando assim os dados em um único lugar (ou instância).
+##### Singleton: Eu utilizei o singleton pra levantar um banco de dados na memória pra poder chamar em qualquer canto e apesar de ter várias instâncias de usuário a mesma instância de banco de dados será utilizada, centralizando assim os dados em um único lugar (ou instância).
